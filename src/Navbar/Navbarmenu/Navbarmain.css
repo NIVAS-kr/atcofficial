@@ -1,0 +1,311 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center;
+ position: fixed;
+  width: 100%;
+  top: -20px;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  background-size: cover;
+  background-position: center; /* Adjust as needed */
+  background-repeat: no-repeat; /* Prevent repeating */
+  height: 110px;
+}
+
+.navbar.scrolled {
+  background-color: white; /* Adjust the background color as needed */
+}
+
+.navbar-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between; /* Space between elements */
+  align-items: center;
+  width: 90%;
+  position:relative;
+  left:-100px; /* Set the width to 80% */
+}
+
+.logo {
+  height: 140px; /* Increase the size of the logo as needed */
+  position: relative;
+  top:-20px;
+ 
+  object-fit: contain; /* Ensure logo scales properly without affecting background */
+}
+
+.desktopMenu {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center; /* Center the menu items */
+}
+
+.desktopMenuListItem {
+  margin: 0 1rem;
+  color: #030304; /* Adjust the text color as needed */
+  text-decoration: none;
+}
+
+.desktopMenuListItem:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.supportLink {
+  position: relative;
+  padding: 0.5rem 1rem;
+  background-color: #cb3840; /* Adjust the background color as needed */
+  color: white;
+  border-radius: 5px; /* Adjust the border-radius as needed */
+}
+
+.desktopMenuBtn {
+  display: flex;
+  align-items: center;
+}
+
+.desktopMenuIconLink {
+  margin-left: 1rem;
+}
+
+.desktopMenuIcon {
+  color: #000; /* Adjust the icon color as needed */
+  font-size: 1.5rem;
+}
+
+.facebookIcon {
+  color: #3b5998;
+  cursor: pointer;
+}
+
+.instagramIcon {
+  color: #c13584;
+  cursor: pointer;
+}
+
+.linkedinIcon {
+  color: #0077b5;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 10px;
+}
+
+.dropdown-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  padding: 10px 16px;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #000;
+  display:block;
+  padding:0px 0px;
+}
+
+.dropdown-menu li:hover {
+  background-color: #cb3840; /* Change background color on hover */
+}
+
+.mobileMenuToggle {
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .desktopMenu {
+    display: none;
+  }
+
+  .mobileMenuToggle {
+    display: block;
+    cursor: pointer;
+    color: #000;
+    font-size: 1.5rem;
+  position:relative;
+  left:5rem;
+    
+
+  }
+
+  .mobileMenu {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust the background color as needed */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    padding-top: 60px;
+    overflow-y: auto;
+  }
+
+  .mobileMenu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .mobileMenuListItem {
+    margin: 1rem 0;
+    color: #fff; /* Adjust the text color as needed */
+    text-decoration: none;
+    display: block;
+  }
+
+  .mobileMenuListItem:hover {
+    text-decoration: underline;
+    color: red; /* Change color on hover */
+  }
+
+  
+
+  .mobileMenu .mobileMenuListItem:hover + .mobile-dropdown-menu {
+    display: block;
+  }
+  .desktopMenuIconLink {
+    margin-left: 0; 
+    display:none;
+  } 
+  .supportLink {
+    width: 100px; /* adjust the width as needed */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin:0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .desktopMenu {
+      display: none;
+    }
+  
+    .mobileMenuToggle {
+      display: block;
+      cursor: pointer;
+      color: #000;
+      font-size: 1.5rem;
+      position: relative;
+      left: 5rem;
+    }
+  
+    .mobileMenu {
+      display: block;
+      background-color: rgba(0, 0, 0, 0.8); /* Adjust the background color as needed */
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1000;
+      padding-top: 60px;
+      overflow-y: auto;
+    }
+  
+    .mobileMenu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+  
+    .mobileMenuListItem {
+      margin: 1rem 0;
+      color: white; /* Adjust the text color as needed */
+      text-decoration: none;
+      display: block;
+    }
+  
+    .mobileMenuListItem:hover {
+      text-decoration: underline;
+      color: red; /* Change color on hover */
+    }
+  
+    .mobileMenu .mobileMenuListItem:hover + .mobile-dropdown-menu {
+      display: block;
+      
+    }
+  
+    .desktopMenuIconLink {
+      margin-left: 0;
+      display: none;
+    }
+  
+    .supportLink {
+      width: 100px; /* Adjust the width as needed */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+    }
+    .mobile-dropdown-menu{
+      position: relative;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 10px;
+ 
+
+    }
+    
+.mobile.dropdown-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.mobile.dropdown-menu li  {
+  text-decoration: none;
+  color: #000;
+  display:block;
+  padding:0px 0px;
+}
+.mobile.dropdown-menu li:hover {
+  background-color: #cb3840; /* Change background color on hover */
+}
+.mobileMenuListItema {
+  margin: 1rem 0;
+  color: black; /* Adjust the text color as needed */
+  text-decoration: none;
+  display: block;
+}
+
+.mobileMenuListItema:hover {
+  text-decoration: underline;
+  color: red; /* Change color on hover */
+}
+  }
+  
+}

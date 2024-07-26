@@ -1,0 +1,504 @@
+.uff {
+  width: 85%;
+  margin: 250px auto;
+}
+
+.chooseHeading {
+  font-weight: 600;
+  width: 100%;
+  font-size: 88px;
+}
+
+
+.choosepara {
+  color: #444444;
+  font-weight: 542;
+  font-size: 17px;
+}
+
+.surajrouter {
+  display: flex;
+}
+
+.choosebutton {
+  margin-left: 210px;
+  margin-top: 10px;
+  height: 40px;
+  border: 1px solid #DEE2E6;
+  width: 118px;
+  border-radius: 8px;
+  background: #E03A3C;
+  color: white;
+}
+
+.choosebutton:hover {
+  background: black;
+  transition-delay: 0.2s;
+  cursor: pointer;
+}
+
+.routerimg {
+  position: relative;
+  right: 100px;
+  bottom: 150px;
+  filter: drop-shadow(10px 10px 10px);
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.chosecard {
+
+  border-radius: 5px;
+  padding: 20px;
+ 
+  width: 33%;
+  height: 408px;
+  background: #E03A3C;
+  color: #fff;
+  font-size: 17px;
+
+  justify-content:center;
+  box-sizing:border-box;
+  
+}
+.butt{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.chosecard button{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+}
+.cards{
+  flex:1;
+}
+.chosecard h1 {
+  text-align: center;
+  padding-bottom: 30px;
+  
+}
+
+.chosecard p {
+ 
+ 
+ font-size:1rem;
+  text-align:justify;
+}
+
+.cardbutton {
+
+  justify-content: center;
+  border-radius: 20px;
+  background: #FFFFFF33;
+  border: none;
+  width: 50%;
+  height: 42px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition-delay: 0.2s;
+  margin-top: 25px;
+}
+
+.cardbutton:hover {
+  background: #fff;
+  color: #198CDB;
+  transition-delay: 0.2s;
+}
+
+.chosecard2 {
+  display: flex;
+  
+  justify-content: center;
+  width: 900px;
+  border-radius: 5px;
+  height: 370px;
+  padding: 20px;
+  margin: 0px auto;
+ 
+  transition: all 0.3 ease-in-out;
+}
+
+.cards {
+  display: flex;
+}
+
+.chosecard2 > div {
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+  border: 1px solid #DEE2E6;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.chosecard2 > div:hover {
+  transform: scale(1.12); /* Slightly increase the size of the card */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+}
+
+.chosecard2 > div h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 40px;
+}
+
+.chosecard2 > div p {
+  font-size: 1rem;
+  color: #444444;
+  margin-top: 40px;
+}
+
+.chosecard2 > div i {
+  font-size: 2rem;
+  color: #1977CC;
+  margin-bottom: 10px;
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
+  font-weight: 500;
+  font-size: 45px;
+}
+
+.our {
+  text-align: center;
+  margin-top: 130px;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.view-all-services {
+  display: flex;
+  justify-content: flex-end; /* Aligns the button to the right */
+}
+
+.all {
+  display: flex;
+  background: #E03A3C;
+  color: #fff;
+  border: none;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  width: 139px;
+  animation: heartbeat 0.6s infinite;
+}
+.whyim{
+  display:flex;
+  margin:0 auto;
+  align-items:center;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.spy {
+  display: flex;
+  height: 160px;
+  margin-top: 70px;
+  
+  margin-bottom: 30px;
+  cursor:pointer;
+}
+
+
+.spy button {
+  flex: 1;
+  margin: 9px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: transparent;
+  color: black;
+  display: flex;
+  cursor:pointer;
+  align-items: center; /* Center align text vertically */
+  justify-content: center; /* Center align text horizontally */
+  text-align: center;
+  font-size: 18px;
+  border:none;
+}
+.spy button:hover{
+  color:#E03A3C;
+  border:none;
+}
+
+
+.spy button svg {
+  height: 40px;
+  width: 40px;
+  margin-right: 1px;
+  color: black;
+}
+.spy button:hover .icon {
+  color:#E03A3C; /* Change icon color to red on hover */
+}
+.spy button.active {
+  background-color:#E03A3C; /* Change background color to red on click */
+  color: white;
+  border:none; /* Change text color to white on click */
+}
+
+.spy button.active .icon {
+  color: white; /* Change icon color to white on click */
+}
+
+
+
+.whymanaged p {
+  width: 90%;
+  padding: 10px 0px;
+}
+
+
+.whymanaged > div {
+  flex: 2 calc(50% - 20px); /* Two columns */
+  box-sizing: border-box;
+}
+
+.whymanaged > div img {
+  width: 50%;
+  height: auto;
+  margin: 0 10px;
+  border-radius:10px;
+  
+}
+.whyim{
+  display:flex;
+}
+.whyim-1 p{
+  text-align:left;
+}
+
+.ourproductcard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.ourproductcard > div {
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px 2px;
+  background: #f5f5f5;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.ourproductcard > div h2 {
+  font-size: 1.5rem;
+  color: #033462;
+  margin-top: 10px;
+  position: relative; /* Ensure positioning context for the pseudo-element */
+}
+
+.ourproductcard > div h2::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 1px; /* Adjust the height of the hr line */
+  background-color: #ccc; /* Adjust the color of the hr line */
+  position: absolute;
+  bottom: -5px; /* Adjust position as needed */
+  left: 50%;
+  transition: width 0.3s ease-in-out; /* Add transition effect */
+}
+
+.ourpro {
+  margin-top: 130px;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.tt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ourprohr {
+  background-color: #E03A3C;
+  height: 5px;
+  width: 60px;
+  margin: 20px 0;
+}
+
+.whypa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 120px 0;
+}
+
+.whypartner {
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.ourproductcard > div p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+  overflow: hidden;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.ourproductcard > div svg {
+  font-size: 70px; /* Adjust icon size */
+  color: white; /* Icon color */
+  margin-bottom: 30px;
+  border: 2px solid transparent;
+  margin: 9px;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: -10px -10px 4px rgb(152, 198, 236);
+  background: #1977cc;
+  transition: all 0.3s ease-in-out;
+}
+
+.ourproductcard > div:hover {
+  background: #e03a3c;
+}
+
+.ourproductcard > div:hover h2,
+.ourproductcard > div:hover p {
+  color: white;
+}
+
+.ourproductcard > div:hover svg {
+  color: black;
+  background: #f9f9f9;
+  box-shadow: none;
+  border-color: #f9f9f9;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .uff {
+    width: 90%;
+    margin: 150px auto;
+  }
+
+  .chooseHeading {
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .choosepara {
+    font-size: 14px;
+  }
+
+  .surajrouter {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .choosebutton {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .routerimg {
+    right:0;
+    bottom: 0;
+    max-width: 100%;
+    object-fit:cover;
+    height:auto;
+ 
+
+  }
+  .routerimg img{
+   
+    max-width:100%;
+  }
+
+  .chosecard {
+    width: 100%;
+    margin: 10px 0;
+    height: auto;
+  }
+
+  .chosecard2 {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-left:0px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .clients {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .our {
+    font-size: 28px;
+    text-align: center;
+    margin-top:160px;
+  }
+
+  .spy {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .spy button {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .whyim {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .whyim-1 {
+    max-width: 90%;
+    text-align: center;
+  }
+  .sdwanimg{
+    width:100%;
+  }
+
+
+  
+}

@@ -1,0 +1,247 @@
+/* ContactSection.css */
+.top-heading-contact{
+  position: relative;
+  top: -140px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  z-index: 2;
+  text-align: center;
+}
+.cont-section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+
+}
+.contact-heading h2{
+  font-size:32px;
+  font-size:700;
+  color: #444444;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap; /* Adjust to wrap on smaller screens */
+  margin-top: 20px;
+  gap: 2%;
+  align-items: stretch; /* Ensure both columns have the same height */
+}
+.redi-hr-contact {
+  background-color: #E03A3C;
+  height: 5px;
+  width: 60px;
+  
+  
+  display:flex;
+  justify-content:center;
+  align-content:center;
+  margin:0 auto ;
+  margin-bottom:10px;
+  margin-top:10px;
+  
+}
+
+.contact-form1,
+.contact-form2 {
+  flex: 1; /* Ensure both forms take up equal space */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between sections */
+}
+
+/* Remove border and background from contact-form1 */
+.contact-form1 {
+  border: none;
+  background: none;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure equal height with flex-grow */
+}
+
+.address-contact {
+  padding: 20px;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+}
+
+.address2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+  gap: 2%;
+  padding: 15px 0;
+}
+
+.contactemail, .contactcall {
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  width: 48%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contactemail h3, .contactcall h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.contactemail p, .contactcall p {
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-form2 {
+  padding: 20px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  position:relative;
+ 
+}
+
+.form-group-contact{
+  margin:20px 0;
+}
+
+/* Ensure equal heights for contact-form1 and contact-form2 */
+.contact-form1,
+.contact-form2 {
+  flex: 1; /* Ensure both forms take up equal space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure that both sections are stretched equally */
+}
+
+.name-emailcontact {
+  display: flex;
+  gap: 2%; /* Space between name and email inputs */
+}
+
+.form-group-contact1 {
+  flex: 1;
+}
+
+.name-emailcontact input,
+.form-group-contact input,
+.form-group-contact textarea {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  border:none;
+  border-radius:5px;
+}
+
+.form-group-contact textarea {
+  height: 100px; /* Increased height for better visibility */
+}
+
+.btn-send-contact {
+  align-self: center; 
+  background-color: #E03A3C;
+  color: #fff;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-send-contact:hover{
+  background-color:#E35052;
+}
+
+
+.form-group-contact button {
+  display: flex;
+  margin: 0 auto;
+}
+.icon-container {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  background-color: #EEE9E9;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid #F5DBDC;
+  color: #333;
+  font-size: 24px;
+}
+.email-icon{
+  height:100%;
+}
+.status-message {
+  font-size: 16px; /* Adjust size if needed */
+  color: green; /* Change to your desired color for success */
+  margin-top: 10px;
+}
+
+.error-message {
+  font-size: 16px; /* Adjust size if needed */
+  color: red; /* Change to your desired color for errors */
+  margin-top: 10px;
+}
+@media (max-width: 768px) {
+  .cont-section {
+    width: 90%;
+  }
+
+  .contact-heading h2 {
+    font-size: 28px;
+  }
+
+  .contact-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-form1,
+  .contact-form2 {
+    width: 100%;
+  }
+
+  .address2 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contactemail,
+  .contactcall {
+    width: 100%;
+  }
+
+  .name-emailcontact {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,137 @@
+/* Whychooseusimg.css */
+.containe-whyimage {
+  position: relative;
+  height: 650px;
+  margin-top: 70px; /* Adjust the height as needed */
+}
+
+.whyimage {
+  width: 100%;
+  height: 100%;
+  width: 120%;
+  margin-left: -120px;
+  object-fit: cover;
+  background: linear-gradient(to left, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%);
+  position: absolute;
+}
+
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.abo h2 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.pa {
+  margin-bottom: 20px;
+  width: 60%;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.abobutton {
+  background-color: transparent;
+  border: 2px solid #e03a3c;
+  height: 40px;
+  width: 160px;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.mis {
+  position: relative;
+  right: 220px;
+  bottom: 30px;
+}
+
+.icon-text {
+  margin-top: 40px;
+}
+
+.lasti {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 90px;
+  right: 100px;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.iconi {
+  font-size: 36px;
+  color: #e03a3c;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  .containe-whyimage {
+    height: 100vh; 
+    margin-right:-63px;/* Adjust the height for mobile view */
+  }
+
+  .overlay {
+    flex-direction: column; /* Stack content vertically for mobile view */
+    justify-content: flex-start; /* Align content to the top */
+    padding-top: 20px; /* Add padding to the top */
+  }
+
+  .abo h2 {
+    font-size: 24px;
+  }
+
+  .pa, .mis, .lasti {
+    width: 80%;
+  }
+  .abobutton{
+margin-left:-35px;
+margin-top:-15px;
+  }
+  .mis{
+   margin-left:350px;
+   margin-top:-20px;
+  }
+
+  .iconi {
+    font-size: 24px;
+  }
+
+  .abobutton {
+    width: 100%;
+  }
+  .h2vis{
+    margin-top:0px;
+    
+  }
+  .lasti{
+    margin-top:30px;
+    margin-left:100px;
+  }
+  
+  
+  
+}

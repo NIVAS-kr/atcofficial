@@ -1,0 +1,115 @@
+.top-heading-switches {
+  position: relative;
+  top: -140px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 27px;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  z-index: 2;
+  text-align: center;
+  
+}
+
+.content-section-switches {
+  width: 80%;
+  margin: 0 auto;
+  margin-top:40px;
+}
+.switches-1{
+  display:flex;
+  gap:30px;
+  margin-bottom:100px;
+
+}
+.switches-top{
+  width:50%;
+
+margin-bottom:5%;
+line-height:24px;
+}
+.switches-top hr,.switches-features hr{margin-bottom:30px;
+
+}
+.switches-top hr{
+  margin-top:5px;
+}
+.py-4-switches{
+  font-size:24px;
+}
+
+
+
+
+
+
+.images-12 {
+  height: 420px !important;
+  width: 50% !important;
+  background: linear-gradient(to left, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(https://atcinfocom.in/assets/img/sw.jpg
+  ) top left no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat:no-repeat!important;
+  background-attachment:fixed !important;
+  object-fit:cover !important;
+  
+}
+.switches-bottom{
+  display:flex;
+  gap:30px;
+}
+.switches-features{
+  width:50%;
+  text-align:justify;
+  margin-bottom:5%;
+  line-height:24px;
+}
+.switches-features ul{
+  margin-left:20px;
+}
+
+.images-13 {
+  height: 420px !important;
+  width: 50% !important;
+  background: linear-gradient(to left, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(https://atcinfocom.in/assets/img/sw.jpg
+  ) top left no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat:no-repeat!important;
+  background-attachment:fixed !important;
+  object-fit:cover !important;
+ 
+
+}
+
+@media (max-width: 768px) {
+  .top-heading-switches {
+    font-size: 20px; /* Adjust font size for mobile */
+    top: -80px; /* Adjust top position */
+  }
+
+  .content-section-switches {
+    width: 90%; /* Adjust width for mobile */
+    margin-top: 20px; /* Adjust margin for mobile */
+  }
+
+  .switches-1, .switches-bottom {
+    flex-direction: column; /* Stack columns vertically */
+    gap: 20px; /* Adjust gap for mobile */
+  }
+
+  .switches-top, .switches-features {
+    width: 100%; /* Make elements full width on mobile */
+  }
+
+  .images-12 {
+    height: 200px !important; /* Adjust height for mobile */
+    width: 100% !important; /* Make image 8 full width on mobile */
+  }
+
+  .images-13 {
+    display: none; /* Hide image 9 on mobile */
+  }
+}

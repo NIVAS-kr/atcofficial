@@ -1,0 +1,165 @@
+.testimonials {
+  margin-top: 100px;
+}
+
+.container {
+  width: 90%; /* Adjust container width for smaller screens */
+  max-width: 1200px; /* Maintain max width on larger screens */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px; /* Adjust font size for headings */
+  padding-bottom: 20px;
+}
+
+.section-title hr {
+  background-color: #E03A3C;
+  height: 5px;
+  width: 60px;
+  
+  
+  display:flex;
+  justify-content:center;
+  align-content:center;
+  margin:0 auto ;
+  margin-bottom:10px;
+  margin-top:10px;
+}
+
+.testimonials-slider .slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-item {
+  background: white;
+  border-radius: 10px;
+  padding: 20px; /* Reduce padding for smaller screens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 5px; /* Adjust margin for smaller screens */
+  max-width: 90%; /* Adjust max-width for smaller screens */
+  word-wrap: break-word; /* Ensure text wraps */
+}
+
+.testimonial-wrap h4 {
+  font-size: 1.2rem; /* Adjust font size */
+  margin-bottom: 10px;
+  color: #ACACAC;
+}
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 20px auto; /* Adjust margin for smaller screens */
+  color: #727272;
+}
+
+.quote-icon-left, .quote-icon-right {
+  color: #ccc;
+  font-size: 1.5rem; /* Adjust icon size */
+  vertical-align: middle;
+}
+.quote-icon-left {
+  color: #FCEAEA;
+}
+.quote-icon-right {
+  color: #FCEAEA;
+}
+
+.slick-dots li button:before {
+  font-size: 12px; /* Adjust size of dots */
+  color: #E03A3C; /* Default dot color */
+}
+
+.slick-dots li.slick-active button:before {
+  color: red; /* Active dot color */
+}
+
+.slick-dots li button {
+  height: 12px; /* Adjust dot height */
+  width: 12px; /* Adjust dot width */
+  border-radius: 50%; /* Make dots circular */
+}
+
+.slick-dots {
+  bottom: -30px; /* Adjust dot position */
+}
+.testimonial-item {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 5px;
+  max-width: 400px; /* Set max-width to 328px */
+  height: 250px; /* Set height to 200px */
+  word-wrap: break-word;
+}
+
+.testimonials-slider {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-slider {
+  width: 100%;
+}
+
+.slick-list {
+  width: 100%;
+}
+
+.slick-track {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonials-slider .slick-slide {
+  margin: 0 10px; /* Add margin between slides */
+}
+
+/* Mobile responsive styles */
+@media (min-width: 769px) {
+  .testimonials {
+    margin-top: 100px;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+  }
+
+  .testimonial-item {
+    max-width: 400px;
+    height: 250px;
+  }
+
+  .testimonial-wrap h4 {
+    font-size: 1.5rem;
+  }
+
+  .testimonials .testimonial-item p {
+    margin: 30px auto;
+  }
+
+  .quote-icon-left, .quote-icon-right {
+    font-size: 1.5rem;
+  }
+
+  .slick-dots li button {
+    height: 12px;
+    width: 12px;
+  }
+
+  .section-title hr {
+    width: 60px;
+  }
+}

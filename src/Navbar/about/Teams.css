@@ -1,0 +1,122 @@
+.team {
+  
+  height: 730px; /* Adjust height as needed */
+  background: linear-gradient(to left, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(https://atcinfocom.in/assets/img/cms2.jpg) top left no-repeat;
+  background-position: center center;
+  background-size: cover !important;
+ 
+  background-attachment: fixed !important;
+
+   width: 100vw;
+   display:flex;
+   flex-direction:column;
+   text-align: center;
+   justify-content:center;
+   gap:5%;
+   
+   padding: 0 50px;
+   margin-top:150px;
+ }
+
+.cards-container {
+  display: flex;
+ height:350px;
+ margin: 0 80px;
+ gap:1%;
+
+  }
+
+.card {
+background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display:flex;
+ justify-content:center;
+  align-items:center;
+  border-radius:10px;
+
+  
+}
+
+
+
+.card-content {
+  text-align: center;
+}
+
+.card-image {
+  max-width: 60%;
+  height: auto;
+ 
+}
+
+.card h3 {
+  text-align:center ;
+  font-size: 18px;
+ }
+
+.card p {
+  text-align:center;
+  font-size: 14px;
+  color: #666;
+
+}
+
+.team-heading {
+  text-align: center;
+ font-size: 32px;
+  font-weight:700;
+  text-transform:uppercase;
+  color: white;
+}
+
+
+.team-heading-hr {
+  width: 6%;
+  height: 2px;
+  background-color: #CB3840;
+  border: none;
+ margin: -20px auto;
+ margin-bottom:5px;
+}
+@media (max-width: 768px) {
+  .team {
+    height: auto; /* Adjust height as needed */
+    padding: 0 20px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    height: auto;
+    margin: 0, 20px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .card-image {
+    max-width: 100%;
+  }
+
+  .team-heading {
+    font-size: 24px;
+  }
+
+  .team-heading-hr {
+    width: 20%;
+  }
+  .team-heading {
+    margin-bottom: 30px; 
+    margin-top:20px;/* Add margin bottom to team heading */
+  }
+
+  .team-heading-hr {
+    margin-bottom: 20px; /* Add margin bottom to HR line */
+  }
+
+  .cards-container {
+    gap: 20px; /* Increase gap between cards */
+  }
+}
+
+ 

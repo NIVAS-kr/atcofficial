@@ -1,0 +1,77 @@
+/* ServiceButtons.css */
+
+.new-1 {
+  background-color: transparent;
+  color: #0d6EfD;
+  border: none;
+  transition: color 0.3s, background-color 0.3s, border 0.3s;
+ 
+ width:330px;
+ height:83px;
+
+ 
+
+
+  
+}
+
+.new-1:hover {
+  color: white;
+  background:#E03A3E;
+  
+}
+
+.new-1.active {
+  background-color: red;
+  color: white;
+  border: 2px solid red;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ddd; /* Ensure consistency with your design */
+}
+
+.nav-link h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight:500;
+  padding-left:15px;
+
+}
+.service-icon{
+  font-weight:500;
+  font-size:30px;
+  
+}
+
+
+
+
+
+/* Additional styles for the buttons */
+.nav-link.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Ensure proper alignment and spacing */
+.nav-link.active i {
+  color: white;
+}
+
+.nav-link i {
+  color: blue;
+}
+@media (max-width: 768px) {
+.service-button{
+  display:flex;
+  flex-direction:column;
+}
+
+}

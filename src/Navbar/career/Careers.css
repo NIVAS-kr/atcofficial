@@ -1,0 +1,255 @@
+/* General Styles */
+.top-heading-career {
+  position: relative;
+  top: -140px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 27px;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  z-index: 2;
+  text-align: center;
+}
+
+.career {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.heading-box-career {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 39px;
+}
+
+.career-hr {
+  width: 45%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+}
+
+.join-career {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+}
+
+#mid-career {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.cardo-career {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  height: 273.6px;
+}
+
+.cardo-career p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+ 
+}
+
+.cardo-career h3 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 33.6px;
+  text-align: center;
+  margin: 10px;
+}
+
+.cardo-career:hover {
+  transform: scale(1.1);
+  background: #E03A3C;
+  color: #fff;
+}
+
+.cardo-career:hover p {
+  color: white;
+}
+
+.cardo-container-career {
+  display: flex;
+  /* Ensure items wrap on smaller screens */
+  gap: 20px;
+  margin-bottom: 160px;
+  justify-content: center; /* Center items */
+}
+
+.hcareer {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+
+}
+
+.pcareer {
+  font-size: 16px;
+  line-height: 24px;
+  width: 1070px;
+  word-spacing: 2px;
+}
+
+.job-opening {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.job-description-career {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  align-items: center;
+  justify-content: space-between;
+  background: #E0FFFF;
+  margin-bottom: 100px;
+  padding: 20px; /* Add padding for better spacing */
+  height: auto; /* Auto height for better responsiveness */
+}
+
+.network-career {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31.2px;
+  color: #444444;
+  font-family: "Raleway", sans-serif;
+  padding: 0 50px 0 110px;
+}
+
+.job-responsibilities-career {
+  flex: 1;
+}
+
+.job-responsibilities-career ul {
+  padding: 0;
+  margin: 0;
+}
+
+.job-responsibilities-career li {
+  margin-bottom: 10px;
+}
+
+.view-apply {
+  background-color: black;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 24px;
+}
+
+.view-apply:hover {
+  background-color: #0069d9;
+}
+
+.responsibilities-career {
+  color: #494444;
+}
+
+.unordered-career {
+  color: #444444;
+  margin-left: 130px;
+  padding-left: 130px;
+}
+
+.footer-career {
+  text-align: center;
+  font-weight: 500;
+  line-height: 28.8px;
+  font-size: 24px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .career {
+    width: 100%;
+    padding: 0 15px; /* Add padding for smaller screens */
+  }
+
+  .heading-box-career {
+    font-size: 30px;
+  }
+
+  .join-career {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  #mid-career {
+    font-size: 30px;
+  }
+
+  .cardo-container-career {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .cardo-career {
+    height: auto;
+    padding: 20px;
+  }
+
+  .cardo-career h3 {
+    font-size: 24px;
+  }
+
+  .cardo-career p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .hcareer {
+    font-size: 30px;
+  }
+
+  .pcareer {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .job-description-career {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .job-description-career li{
+    margin-left:10px;
+  }
+  .job-description-career h5{
+    margin-bottom:5px;
+  }
+
+  .network-career {
+    font-size: 22px;
+    padding: 0 20px; /* Adjust padding for smaller screens */
+  }
+
+  .unordered-career {
+    padding-left: 20px;
+    margin-left: 0;
+  }
+
+  .view-apply {
+    font-size: 14px;
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
+
+  .footer-career {
+    font-size: 20px;
+  }
+}

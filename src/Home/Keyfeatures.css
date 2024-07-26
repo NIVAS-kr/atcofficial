@@ -1,0 +1,93 @@
+.flex-container {
+  display: flex;
+  justify-content: space-between; /* Ensures content is spaced between left and right */
+  margin-bottom: 40px;
+  
+ 
+  font-family:"Raleway",sans-serif;
+ 
+  font-size:18px;
+}
+
+.content-left {
+  flex: 1; /* Takes up remaining space on the left */
+  padding: 20px;
+
+}
+
+.content-right {
+  flex: 1; /* Takes up remaining space on the right */
+}
+
+.images-2-0 {
+  height: 420px !important;
+  width: 100% !important;
+  margin-top:80px;
+  background: linear-gradient(to left, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(https://atcinfocom.in/assets/img/broadband1.jpg) top left no-repeat !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
+
+.images-2-1 {
+  height: 420px !important;
+  width: 100% !important;
+  
+  background: linear-gradient(to left, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(https://atcinfocom.in/assets/img/team1.jpg
+  ) top left no-repeat !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
+
+/* Additional styling for headings and paragraphs */
+.content-left h2 {
+  font-size: 30px;
+  
+  margin-bottom: 16px;
+}
+
+.content-left ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.content-left ul li {
+  margin-bottom: 10px;
+}
+
+.content-left p {
+  font-size: 18px;
+  line-height: 1.6;
+  
+}
+@media only screen and (max-width: 767px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .content-left, .content-right {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .content-left h2 {
+    font-size: 24px;
+  }
+
+  .content-left p, .content-left ul li {
+    font-size: 16px;
+  }
+
+  .images-2-0, .images-2-1 {
+    height: 250px !important; /* Adjust height for mobile view */
+    width: 100% !important;
+    background-size: cover !important;
+    margin-top: 10px;
+  }
+}
+

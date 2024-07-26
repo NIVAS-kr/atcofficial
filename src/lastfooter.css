@@ -1,0 +1,140 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+ 
+  background-color: #111111;
+  color: white;
+  height: 100px;
+  position:relative;
+  
+  
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: white;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+}
+
+.social-icons a:hover {
+  background-color: #CB3840;
+}
+
+.footer h3 {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center; /* Center align the text */
+}
+
+.footer h3 span {
+  display: inline-block; /* Ensure span is on the same line */
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.scrollToTopButton {
+  background-color: #cb3840;
+  color: white;
+  border: none;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 9999;
+}
+
+.scrollToTopButton:hover {
+  background-color: #CB3840;
+}
+
+.scrollToTopIcon {
+  font-size: 20px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .footer {
+    width:100%;
+    height: auto;
+    padding: 10px; /* Adjusted padding for mobile */
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    width: 95%;
+     margin:10px;
+     
+  }
+  
+  .footer h3 {
+    font-size: 14px; 
+  /* Slightly smaller font size for mobile */
+  }
+  
+  .footer h3 span {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .social-icons {
+    margin-top: 18px;
+    justify-content: center;
+     /* Center social icons */
+  }
+
+  .social-icons a {
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+    padding: 5px; /* Adjust padding for smaller size */
+  }
+
+  .scrollToTopButton {
+    width: 40px; /* Adjusted width for mobile */
+    height: 40px; /* Adjusted height for mobile */
+    font-size: 16px;
+    bottom: 0px;
+    right:0px;
+    position:absolute;
+    margin:10px;
+   
+  }
+
+  .footerIcon {
+    margin: 4%;
+  }
+}

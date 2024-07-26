@@ -1,0 +1,41 @@
+html, body {
+  width: 100% !important; /* Ensure full width */
+  overflow-x: hidden !important;
+
+}
+
+.background-section {
+  background: linear-gradient(to left, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(https://www.atcinfocom.com/assets/img/mobile-signal-booster.jpg) top left no-repeat !important;
+  background-size: cover;
+  width: 100% !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index:1;
+  overflow:hidden;
+
+  
+   /* Remove any default margins */
+  padding: 0; /* Remove any default padding */
+  box-sizing: border-box; /* Ensure consistent box sizing */
+}
+
+@media (max-width: 768px) {
+  .background-section {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .background-section {
+    
+    background-size: auto 100%;
+    height: 250px;
+  }
+}

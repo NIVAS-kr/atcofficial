@@ -1,0 +1,104 @@
+/* General styles */
+.footeu {
+  font-family: sans-serif, 'Open-Sans';
+  background-color: #1B1B1B;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem;
+  padding-right: 128px; 
+  width: 100%;
+  display:flex;
+  flex-wrap:wrap;
+  margin-top:20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 1.25rem;
+  margin-left: 5rem; 
+}
+
+.footer-section p {
+  padding-top: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  word-spacing: 0.1875rem;
+  line-height: 1.4375rem;
+}
+
+a {
+  color: #7E7777;
+  text-decoration: none; 
+}
+
+a:hover {
+  color: white;
+}
+
+.footer-links li,
+.footer-products li {
+ 
+  margin-top: 1.0625rem;
+  
+}
+
+.link-icon {
+  color: white !important;
+  font-size: 0.875rem;
+  margin-right: 0.3125rem;
+  transform: translateX(0.125rem);
+}
+
+.hr-red {
+  background-color: #E03A3C;
+  height: 0.125rem;
+  width: 1.5625rem;
+  border: none;
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+  .footeu {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Center align items */
+    height: auto; /* Let height adjust based on content */
+   
+    width:100%; /* Adjust padding for smaller screens */
+    padding-left:0;
+    padding-right:0;
+  }
+
+
+  .footer-section {
+    margin-left: 0; /* Remove left margin on mobile */
+     /* Center align text */
+  }
+
+  .footer-section h2 {
+    white-space:nowrap;
+    font-size:1.5rem;
+    overflow:hidden;
+   
+     
+  }
+
+  .footer-section p {
+    width: 100%; /* Take full width */
+  }
+
+  .footer-links {
+    align-items: flex-start; /* Align links to the left */
+    width: 100%; /* Take full width */
+    margin-top: 1rem; /* Adjust spacing */
+  }
+  .footer-section h2 br {
+    display: none; /* Hide <br> tags in h2 for mobile */
+  }
+  body,html{
+    overflow-x:hidden;
+  }
+
+  
+
+}

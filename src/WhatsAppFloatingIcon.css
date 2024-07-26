@@ -1,0 +1,45 @@
+.whatsapp-floating-icon {
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  cursor: pointer;
+  animation: floatUpDown 2s infinite alternate;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.whatsapp-icon {
+  font-size: 60px;
+  color: green;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .whatsapp-floating-icon {
+    bottom: 30px;
+    right: 30px;
+  }
+
+  .whatsapp-icon {
+    font-size: 50px; /* Larger size for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .whatsapp-floating-icon {
+    bottom:60px;
+    right: 20px;
+  }
+
+  .whatsapp-icon {
+    font-size: 60px; /* Larger size for desktop */
+  }
+}

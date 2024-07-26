@@ -1,0 +1,62 @@
+/* General Styles */
+.container-nms {
+  color: #444444;
+  width: 80%;
+  margin: 0 auto;
+  margin-top:40px; /* Adjust as needed */
+}
+
+.img-polaroid {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100px !important; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.col-md-2 {
+  width: 16.666%; /* 6 columns horizontally */
+  margin-bottom: 10px; /* Adjust margin between images */
+  text-align: center;
+}
+
+/* Mobile Specific Styles */
+@media (max-width: 768px) {
+  .container-nms {
+    width: 90%; /* Adjust width on mobile */
+  }
+
+  .row {
+    flex-direction: row; /* Align items in a row on mobile */
+     /* Prevent wrapping to next line */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+  }
+
+  .col-md-2,
+  .col-md-3 {
+    width: auto; /* Auto width for each image on mobile */
+    margin-bottom: 0; /* Adjust spacing between images */
+  }
+
+  /* Adjustments for specific sections */
+  .container-nms div:nth-of-type(5) .row {
+    margin-left: 0; /* Remove left margin for specific section */
+  }
+
+  /* Wireless Infrastructure Images */
+  .container-nms div:nth-of-type(9) .img-polaroid,
+  .container-nms div:nth-of-type(21) .img-polaroid {
+    width: 60px !important; /* Adjust the width as needed */
+  }
+}

@@ -1,0 +1,125 @@
+/* Services.css */
+
+/* General styles */
+.top-heading-services {
+  position: relative;
+  top: -140px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 27px;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  z-index: 2;
+  text-align: center;
+}
+
+.container-services {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.service-heading h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.service-heading hr {
+  width: 180px;
+  margin: 16px 0;
+  border-color: #B2AFEF;
+}
+
+.service-content li {
+  margin-left: 20px;
+}
+
+.service-head {
+  font-size: 28px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  word-wrap: break-word; /* Ensure long words wrap to the next line */
+}
+
+.service-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 2%;
+  margin-top: 70px;
+}
+
+.service-item {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row; 
+  word-spacing: 1px;
+  line-height: 30px;
+  gap: 2%;
+}
+
+/* Mobile responsiveness */
+/* Mobile responsiveness */
+@media only screen and (max-width: 768px) {
+  .top-heading-services{
+    margin-top:-30px;
+  }
+  .service-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-image1 img {
+    width: 80%; /* Reduced image width */
+    height: auto;
+    margin:0 auto;
+  }
+
+  .service-content {
+    width: 80%; /* Reduced content width */
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100vw;
+  }
+
+  .container-services {
+    width: 90%;
+  }
+
+  .top-heading-services {
+    top: -100px;
+  }
+
+  .service-head {
+    font-size: 20px;
+  }
+
+  .service-para {
+    font-size: 14px;
+  }
+
+  .service-heada {
+    font-size: 18px;
+  }
+  .service-content {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word; /* Add this line */
+    max-width: 100vw; /* Add this line */
+  }
+  .service-content ul {
+    list-style-position: inside;
+    padding-left: 0;
+    text-align: left; /* Add this line */
+  }
+  
+  .service-content li {
+    text-align: left; /* Add this line */
+  }
+}
